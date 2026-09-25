@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+   <title>MOSCAWARE</title>
+   <link href="https://fonts.googleapis.com/css?family=Fredoka One" rel="stylesheet">
+   <link rel="icon" href="https://i.imgur.com/jQhyN7d.png">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+   <style type="text/css">
+      body{
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      overflow-y: scroll;
+      background-color:#101010;
+      }
+      body::-webkit-scrollbar {
+      display: none; 
+      }
+      .vidframe{
+      border: 0px solid #000000;
+      align: center;
+      width: 854px;
+      height: 480px;
+      position:relative;
+      top: -1200px;
+      left: 0px;
+      }
+      .upperframe{
+      border: transparent;
+      height:70px;
+      width:100%;
+      background: #151515;
+      z-index: 5;
+      }
+      .moscaframe{
+      margin: auto;
+      height:100px;
+      position:relative;
+      width:calc(100% + 40px);
+      text-align: center;
+      -webkit-text-stroke-width:0px;
+      -webkit-text-stroke-color:#000000;
+      background-color:transparent;
+      font-size:50px;
+      color: #f8181c;
+      font-family: "Fredoka One";
+      top: -78px;
+      left: -740px;
+      z-index: 5;
+      }
+      .wareframe{
+      margin: auto;
+      height:100px;
+      position:relative;
+      width:calc(100% + 40px);
+      text-align: center;
+      -webkit-text-stroke-width:0px;
+      -webkit-text-stroke-color:#000000;
+      background-color:transparent;
+      font-size:50px;
+      color: #FFFFFF;
+      font-family: "Fredoka One";
+      top: -235px;
+      left: -575px;
+      z-index: 5;
+      }
+      .vidback {
+      align: center;
+      position:relative;
+      object-fit: fill;
+      height: 850px;
+      width: 100%;
+      z-index: -1;
+      top: -320px;
+      left: 0px;
+      }
+      .vidbackframe{
+      border: transparent;
+      align: center;
+      position:relative;
+      width: 100%; 
+      height: 850px;
+      background: #212020;
+      top: -1175px;
+      left: 0px;
+      z-index: -1;
+      opacity: 0.8;
+      }
+      .welcometext{
+      margin: auto;
+      height:100px;
+      position:relative;
+      width:calc(100% + 40px);
+      text-align: center;
+      -webkit-text-stroke-width:0px;
+      -webkit-text-stroke-color:#000000;
+      background-color:transparent;
+      font-size:40px;
+      color: #FFFFFF;
+      font-family: "Fredoka One";
+      top: -1750px;
+      left: 0px;
+      z-index: 5;
+      }
+      .secmoscatext{
+      margin: auto;
+      height:100px;
+      position:relative;
+      width:calc(100% + 40px);
+      text-align: center;
+      -webkit-text-stroke-width:0px;
+      -webkit-text-stroke-color:#000000;
+      background-color:transparent;
+      font-size:90px;
+      color: #f8181c;
+      font-family: "Fredoka One";
+      top: -1810px;
+      left: -170px;
+      z-index: 5;
+      }
+      .secwaretext{
+      margin: auto;
+      height:100px;
+      position:relative;
+      width:calc(100% + 40px);
+      text-align: center;
+      -webkit-text-stroke-width:0px;
+      -webkit-text-stroke-color:#000000;
+      background-color:transparent;
+      font-size:90px;
+      color: #FFFFFF;
+      font-family: "Fredoka One";
+      top: -1910px;
+      left: 130px;
+      z-index: 5;
+      }
+      .leyendtext{
+      margin: auto;
+      height:100px;
+      position:relative;
+      width:calc(100% + 40px);
+      text-align: center;
+      -webkit-text-stroke-width:0px;
+      -webkit-text-stroke-color:#000000;
+      background-color:transparent;
+      font-size:40px;
+      color: #FFFFFF;
+      font-family: "Fredoka One";
+      top: -2600px;
+      left: 0px;
+      z-index: 5;
+      }
+
+      .shoppylink{
+      margin: auto;
+      height:50px;
+      position:relative;
+      border: transparent;
+      text-align: center;
+      -webkit-text-stroke-width:1px;
+      -webkit-text-stroke-color:#000000;
+      background-color:#101010;
+      font-size:30px;
+      color: #FFFFFF;
+      font-family: "Fredoka One";
+      top: -163px;
+      left: 1490px;
+      z-index: 5;
+      }
+      .shoppy{
+      margin: auto;
+      height:50px;
+      position:relative;
+      border: transparent;
+      text-align: center;	
+      background-color:transparent;
+      top: -170px;
+      left: 1125px;
+      z-index: 5;
+      }
+      .discord{
+      margin: auto;
+      height:50px;
+      position:relative;
+      border: transparent;
+      background-color:transparent;
+      top: -170px;
+      left: 865px;
+      z-index: 5;
+      }
+      .invite{
+      margin: auto;
+      height:50px;
+      position:relative;
+      border: transparent;
+      text-align: center;
+      -webkit-text-stroke-width:1px;
+      -webkit-text-stroke-color:#000000;
+      background-color:#101010;
+      font-size:30px;
+      color: #FFFFFF;
+      font-family: "Fredoka One";
+      top: -163px;
+      left: 1110px;
+      z-index: 5;
+      }
+      .whatis{
+      margin: auto;
+      height:100px;
+      position:relative;
+      width:calc(100% + 40px);
+      text-align: center;
+      -webkit-text-stroke-width:0px;
+      -webkit-text-stroke-color:#000000;
+      background-color:transparent;
+      font-size:45px;
+      color: #FFFFFF;
+      font-family: "Fredoka One";
+      top: -1470px;
+      left: 0px;
+      z-index: 5;
+      }
+      .info{
+      margin: auto;
+      height:100px;
+      position:relative;
+      width:900px;
+      text-align: justify;
+      -webkit-text-stroke-width:0px;
+      -webkit-text-stroke-color:#000000;
+      background-color:transparent;
+      font-size:25px;
+      color: #FFFFFF;
+      font-family: "Fredoka One";
+      top: -1450px;
+      left: 0px;
+      z-index: 5;
+      }
+   </style>
+   </head>
+   <body>
+      <iframe class="upperframe"></iframe>
+      <div class="moscaframe">MOSCA</div>
+      <button class="shoppylink"onclick="openshop()">PURCHASE</button>
+      <button class="invite"onclick="openinvite()">DISCORD</button>
+      <img class="shoppy"src="https://i.imgur.com/pUxE9Eu.png">
+      <img class="discord"src="https://i.imgur.com/HutzbNK.png">
+      <div class="wareframe">WARE</div>
+      <video autoplay muted loop class="vidback"><source src="vidframed.mp4" type="video/mp4"></video>
+      <iframe class="vidbackframe"></iframe>
+      <div class="welcometext">Welcome to ...</div>
+      <div class="secmoscatext">MOSCA</div>
+      <div class="secwaretext">WARE</div>
+      <div id = "whatis" class="whatis">What is MOSCAWARE?</div>
+      <div id = "info" class="info">MOSCAWARE is one of the best cheats that you can currently buy, you can fully customize your experience by making your own settings or using the settings that our MoscaTeam has prepared for you, you can choose between blatantly cheating or making the cheat look as legit aim, we focus on making your aim look legit while you're playing gunfighting games, despite that, we also have support for many other games and bypass their AntiCheats, although we focus on aimlock we also have a Silent Aim, ESP and extra functions! Feel free to take a look in the following promo video.</div>
+      <p align="center"><iframe class="vidframe"src="https://www.youtube.com/embed/_KkAHc8dq1w?autoplay=1&mute=1"></iframe></p>
+      <div id = "leyends" class="leyendtext"></div>
+      <script>
+      	function openinvite() {
+  			window.open("https://discord.gg/G7uYDTZBQW");
+		}
+		function openshop() {
+  			window.open("https://checkout.stripe.com/pay/cs_live_a1mH63eNkf2Dd03SLfn3J43j8WAbscouKNh1awjDOJ1l1oynV6AvN7Cvmg#fidkdWxOYHwnPyd1blppbHNgWjA0TnU0cHZDZGBOaWg3a0ZrTn1gbDd2dkZmTG1NNWQ9Nm1%2FQ2ZWQ3VUaHJ2c3xCM2kzTVFxVDE0SjNLS39gYEpoNWY1UFFjMnBuVjNUYjUxYnR0T11LajBCNTVWVW5QPEQwdScpJ3VpbGtuQH11anZgYUxhJz8nPXJIPURgbTU0ZmJOZ21WYFBQJ3gl");
+		}
+		var fadeTarget = document.getElementById("leyends");
+		function unfade(element) {
+    	var op = 0.1;
+    	element.style.display = "block";
+    	var timer = setInterval(function() {
+      	if (op >= 1) {
+          	clearInterval(timer);
+       	}
+       	element.style.opacity = op;
+        	element.style.filter = "alpha(opacity=" + op * 100 + ")";
+      	op += op * 0.1;
+    	}, 10);
+		}
+
+		function fade(element) {
+    	var op = 1;
+    	var timer = setInterval(function() {
+        	if (op <= 0.1) {
+            	clearInterval(timer);
+            	element.style.display = "none";
+        	}
+        	element.style.opacity = op;
+        	element.style.filter = "alpha(opacity=" + op * 100 + ")";
+        	op -= op * 0.1;
+    		}, 10);
+		}
+		const textList = ["One of the best aimlocks made with LUA for ROBLOX&#174", "Ultra-Advanced configuration system", "Made by 3 mexican kids", "Not visible to human sight with proper configuration", "Universal aimlock & ESP", "Silent Aim", "Active customer support", "Multiple character checks", "Whitelist players (Doesn't crash like other cheats...)", "Undetectable in most cases", "Multiple AntiCheat bypasses"];
+		const cycle = document.querySelector("#leyends");
+		let i = 0;
+		const listtext = () => {
+    	unfade(fadeTarget)
+    	setTimeout(function() {
+        fade(fadeTarget)
+    	}, 1500);
+    	cycle.innerHTML = textList[i];
+    		i = ++i % textList.length;
+		}
+		listtext();
+		setInterval(listtext, 2400);
+      </script>
+   </body>
+</html>
